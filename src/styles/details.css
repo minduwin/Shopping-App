@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.showProd {
+    background: #fff;
+    max-width: 1200px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    margin: 20px;
+    max-width: 500px;
+    display: flex;
+}
+
+.mainImage img {
+    max-width: 350px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImage {
+    max-width: 300px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImage img {
+    max-width: 70px;
+    margin: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.secImage img:hover {
+    border: 0.5px solid rgba(117, 117, 117, 0.486);
+}
+
+.prodInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+}
+
+.prodCategory p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    color: rgb(153, 153, 153);
+    text-transform: uppercase;
+}
+
+.prodTitle {
+    margin: 10px 0px;
+}
+
+.prodTitle h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #020826;
+    font-weight: 100;
+    font-size: 2.3em;
+}
+
+.prodRate {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.prodRate p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.prodRate img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(10%) saturate(7482%) hue-rotate(352deg) brightness(98%) contrast(93%);
+    width: 20px;
+    margin-left: 3px;
+}
+
+.prodDesc p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    color: rgb(153, 153, 153);
+    font-weight: 300;
+}
+
+.prodPrice {
+    margin: 20px 0px;
+}
+
+.prodPrice h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #da2514;
+    font-size: 2.5em;
+}
+
+.detailBtn {
+    margin: 20px 0px;
+}
+
+.detailBtn button {
+    padding: 10px 20px;
+    margin-right: 8px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+
+    border: none;
+    background-color: #020826;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.detailBtn button:hover {
+    background-color: #020826c7;
+}
+
+@media only screen and (max-width: 1200px) {
+    .showProd {
+        /* background: #fff; */
+        max-width: 600px;
+        /* border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 20px;
+        margin: 10px auto; */
+
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .images {
+        margin: 10px;
+        max-width: 230px;
+        /* display: flex; */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mainImage img {
+        max-width: 180px;
+        margin: 8px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secImage {
+        max-width: 150px;
+        margin: 5px auto;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .secImage img {
+        max-width: 50px;
+        /* margin: 5px 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 8px; */
+    }
+
+    .prodInfo {
+        /* display: flex;
+        flex-direction: column; */
+        margin: 10px 10px;
+    }
+
+    .prodCategory p {
+        /* font-family: 'Ubuntu', sans-serif; */
+        font-size: 1em;
+        /* color: rgb(153, 153, 153);
+        text-transform: uppercase; */
+    }
+
+    .prodTitle {
+        margin: 10px 0px;
+    }
+
+    .prodTitle h1 {
+        /* font-family: 'Ubuntu', sans-serif;
+        color: #020826;
+        font-weight: 100; */
+        font-size: 1.5em;
+    }
+
+    .prodRate {
+        margin: 5px 0px;
+        /* display: flex;
+        align-items: center; */
+    }
+
+    .prodRate p {
+        font-size: 0.8em;
+    }
+
+    .prodPrice {
+        margin: 10px 0px;
+    }
+
+    .prodPrice h3 {
+        font-size: 2em;
+    }
+
+    .prodDesc p {
+        font-size: 0.9em;
+    }
+
+    .detailBtn {
+        margin: 15px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .detailBtn button {
+        font-size: 0.9em;
+    }
+
+}

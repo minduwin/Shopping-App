@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.emptyList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0;
+} 
+
+article {
+    width: 60%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wishBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid #eaddcf;
+    padding-bottom: 5px;
+}
+
+.wishImage {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.wishImage img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.wishImage p {
+    font-size: 0.8em;
+}
+
+.removeBtn button {
+    background: #f25042;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 5px 8px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.removeBtn button:hover {
+    background: #f25142c5;
+}
+
+.cleanBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cleanBtn button {
+    padding: 8px 15px;
+    margin: 5px 10px;
+    font-size: 1.2em;
+    background: #020826;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.cleanBtn button:hover {
+    background: #020826d5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 920px) {
+    .cleanBtn {
+        margin-top: 20px;
+    }
+
+    .cleanBtn button {
+        font-size: 1em;
+    }
+
+}

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.emptyCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0;
+} 
+
+article {
+    width: 60%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cartBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid #eaddcf;
+    padding-bottom: 5px;
+}
+
+.cartImg {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.cartImg img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.cartImg p {
+    font-size: 0.8em;
+}
+
+.cartButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButtons {
+    display: flex;
+    margin-right: 8px;
+}
+
+.addButtons button {
+    margin: 0px 3px;
+    padding: 5px 8px;
+    background: #8c7851;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+.addButtons button:hover {
+    background: #8c7851c5;
+}
+
+.delButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delButtons span {
+    color: #020826;
+    font-size: 1.2em;
+    padding: 5px 0px;
+}
+
+.delButtons button {
+    background: #f25042;
+    font-size: 0.7em;
+    padding: 5px 8px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.delButtons button:hover {
+    background: #f25142c5;
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.total p {
+    margin-right: 50px;
+}
+
+.total span {
+    margin-right: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cleanButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.cleanButton button {
+    padding: 8px 15px;
+    margin: 5px 10px;
+    font-size: 1.2em;
+    background: #020826;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.cleanButton button:hover {
+    background: #020826d5;
+    cursor: pointer;
+}
+
+.foot {
+    position: fixed;
+}
+
+@media only screen and (max-width: 920px) {
+    .cartBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .addButtons button {
+        font-size: 0.7em;
+        font-weight: 600;
+    }
+
+    .delButtons {
+        flex-direction: row;
+    }
+
+    .delButtons span {
+        padding: 5px 10px;
+    }
+
+    .total {
+        justify-content: center;
+        float: none;
+        margin-right: 50px;
+    }
+
+    .total p {
+        margin-right: 10px;
+    }
+
+    .cleanButton {
+        margin-top: 50px;
+    }
+
+    .cleanButton button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+}
